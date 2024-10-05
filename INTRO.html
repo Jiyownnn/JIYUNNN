@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Jullia</title>
+</head>
+<style>
+body {
+    font-family: 'Playfair Display', cursive !important;
+    background: #f8dd91;
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background: transparent;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 3px;
+    font-family: 'Amatic SC', cursive !important;
+}
+
+.color1 {
+    color: #1BBC9B;
+}
+
+.color2 {
+    color: #C0392B;
+}
+</style>
+<body>
+    <img class="gif" alt="gif" src="https://media0.giphy.com/media/t8Lo2mPAzOcmVTgtGe/giphy.gif?cid=6c09b952231uyrnduhdsf4wqnxz03rv9wx3ni5sm0zolrxz3&ep=v1_stickers_related&rid=giphy.gif&ct=s"/>
+    <div class="greet">
+    <!-- put his/her name here <span>Jullia</span -->
+        <span>FOR JULLIA</span>
+    </div>
+    <button id="playButton">CLICK ME FIRST</button>
+
+    <!-- Add the audio element without controls and set to autoplay -->
+    <audio id="audioPlayer" autoplay loop>
+        <source src="Bg.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio> 
+<!-- JavaScript to play audio after user interaction -->
+<script>
+    const playButton = document.getElementById('playButton');
+    const audioPlayer = document.getElementById('audioPlayer');
+
+    playButton.addEventListener('click', () => {
+        audioPlayer.play();
+        playButton.style.display = 'none'; // Hide the button after playing
+    });
+</script>
+    <div class="description">
+        <span>CLICK HERE<3</span>
+    </div>
+    <div class="button">
+        <button>
+        <a href="books.html" target="_blank">CLICK HERE</a>
+        </button>
+        
+    </div>
+</script>
+</body>
+</html>
